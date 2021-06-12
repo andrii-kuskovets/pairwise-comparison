@@ -1,0 +1,46 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  overflow: hidden;
+
+  &__body {
+	tr {
+	  border-top: 1px solid grey;
+	  height: 30px;
+	}
+  }
+
+  &__td-mark {
+	display: none;
+	span {
+	  background-color: #48c774;
+	  width: 55px;
+	  height: 80%;
+	  padding: 3px 5px;
+	  font-size: 12px;
+	  border-radius: 6px;
+	  color: white;
+	}
+
+	&_show {
+	  display: block;
+	}
+  }
+}
+
+.btn-reset {
+  background-color: tomato;
+  border-color: tomato;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-top: 20px;
+
+  &:hover {
+	background-color: darken(tomato, 10%);
+	border-color: darken(tomato, 10%);
+  }
+}

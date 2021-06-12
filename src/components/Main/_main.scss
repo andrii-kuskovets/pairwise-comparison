@@ -1,4 +1,18 @@
 .results {
   display: flex;
   justify-content: space-between;
+  
+  @media (max-width: 520px) {
+    flex-direction: column;
+  }
+}
+
+.wrapper {
+  padding: 30px;
+  width: 75%;
+
+  @media (max-width: 768px) {
+    width: 90%;
+    padding: 15px;
+  }
 }
