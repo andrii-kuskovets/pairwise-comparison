@@ -1,0 +1,48 @@
+.form {
+  display: flex;
+  position: relative;
+  margin-bottom: 20px;
+
+  span {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    color: red;
+    display: none;
+  }
+
+  &__group {
+    input {
+      padding: 7px 5px;
+      border: 1px solid grey;
+      border-radius: 6px 0 0 6px;
+      border-right: none;
+
+      &:focus-visible {
+        border: 1px solid grey;
+      }
+    }
+    &_error {
+      input {
+        border-color: red;
+      }
+      span {
+        display: block;
+      }
+    }
+  }
+
+  &__btn {
+    cursor: pointer;
+    background-color: #00d1b2;
+    border: 1px solid #00d1b2;
+    border-radius: 0 6px 6px 0;
+    color: #ffffff;
+    padding: 0 9px;
+
+    &:hover {
+      background-color: darken(#00d1b2, 20%);
+      border-color: darken(#00d1b2, 20%);
+    }
+  }
+}
